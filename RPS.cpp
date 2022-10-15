@@ -26,25 +26,28 @@ void RPS::whosTheWinner() {
 		std::cout << "It's a tie!, no one wins!" << std::endl;
 		return;
 	}
-	if (player1 == static_cast<int>(diffChoices::ROCK) && player2 == static_cast<int>(diffChoices::SCISSORS)) {
-		std::cout << "Player 1 wins!";
+	if (player1 == static_cast<int>(diffChoices::ROCK) && player2 == static_cast<int>(diffChoices::SCISSORS)) { // 0 and 2
+		std::cout << "Player 1 wins!" << std::endl; 
 		return;
 	}
-	else {
+	if(player1 == static_cast<int>(diffChoices::SCISSORS) && player2 == static_cast<int>(diffChoices::ROCK)) { // 2 and 0
 		std::cout << "Player 2 wins!" << std::endl;
-
+		return;
 	}
-	if (player1 == static_cast<int>(diffChoices::SCISSORS) && player2 == static_cast<int>(diffChoices::PAPER)) {
+	if (player1 == static_cast<int>(diffChoices::SCISSORS) && player2 == static_cast<int>(diffChoices::PAPER)) { //2 and 1
 		std::cout << "Player 1 wins!" << std::endl;
 		return;
 	}
-	else {
+	if(player1 == static_cast<int>(diffChoices::PAPER) && player2 == static_cast<int>(diffChoices::SCISSORS)) { // 1 and 2
 		std::cout << "Player 2 wins!" << std::endl;
+		return;
 	}
-	if (player1 == static_cast<int>(diffChoices::PAPER) && player2 == static_cast<int>(diffChoices::ROCK)) {
-		std::cout << "Player 1 wins!";
+	if (player1 == static_cast<int>(diffChoices::PAPER) && player2 == static_cast<int>(diffChoices::ROCK)) { // 1 and 0
+		std::cout << "Player 1 wins!" << std::endl;
+		return;
 	}
-	else {
+	if (player1 == static_cast<int>(diffChoices::ROCK) && player2 == static_cast<int>(diffChoices::PAPER)) { // 0 and 1
 		std::cout << "Player 2 wins!" << std::endl;
+		return;
 	}
 }
