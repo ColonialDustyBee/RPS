@@ -1,5 +1,4 @@
 #include "RPS.h"
-//#include <conio.h> // This will make inputs not appear., we'll comment this out for now
 #include <iostream>
 
 RPS::RPS() { }; // Maybe constructor should make it so
@@ -19,7 +18,6 @@ void RPS::initializePlayer2(int input) {
 }
 
 void RPS::whosTheWinner() {
-	// Lets do this pretty thing, shall we?
 	std::cout << "Player 1 chose: " << choices[player1] << std::endl;
 	std::cout << "Player 2 chose: " << choices[player2] << std::endl;
 	if(player1 == player2){ // If there's a tie
