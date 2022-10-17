@@ -8,6 +8,8 @@ int main() {
 	RPS game;
 	bool choiceV1 = true, choiceV2 = true;
 	cout << "---------WELCOME TO ROCK PAPER SCISSORS---------" << endl;
+	cout << "The options you may enter for this game are: " << endl;
+	cout << "1. Rock\n2. Paper\n3. Scissors" << endl;
 	cout << "Please enter values between 0 and 2 for both players" << endl;
 	cout << "Please enter choice for player 1: ";
 	cin >> choice1;
